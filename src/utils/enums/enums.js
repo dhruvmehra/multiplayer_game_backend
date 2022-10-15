@@ -1,4 +1,4 @@
-export const GameStatus = {
+const GameStatus = {
   Active: "Active",
   PlayerOneWon: "PlayerOneWon",
   PlayerTwoWon: "PlayerTwoWon",
@@ -6,7 +6,7 @@ export const GameStatus = {
   PlayerTwoForfeit: "PlayerTwoForfeit",
 };
 
-export const AccountStatus = {
+const AccountStatus = {
   Active: "Active",
   Closed: "Closed",
   Blacklisted: "Blacklisted",
@@ -14,7 +14,8 @@ export const AccountStatus = {
   None: "None",
 };
 
-export const playerOnlineStatus = {
+const playerOnlineStatus = {
   True: true,
   False: false,
 };
+module.exports = { GameStatus, AccountStatus, playerOnlineStatus };

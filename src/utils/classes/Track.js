@@ -1,6 +1,7 @@
-export default class Track {
+class Track {
   constructor(trackArray) {
     this.track = trackArray;
-    this.trackLength = trackArray.lenght;
+    this.trackLength = trackArray.length;
   }
 }
+module.exports.Track = Track;

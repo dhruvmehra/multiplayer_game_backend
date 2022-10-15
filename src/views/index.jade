@@ -3,6 +3,17 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  
+  // jQuery makes reading user data and injecting data easier
+  script(src="//code.jquery.com/jquery-1.11.2.min.js")
+  script(src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+  
+  // Socket
   script(src="/socket.io/socket.io.js")
   script.
+    //- $(document).ready(function() {
     var socket = io.connect('http://localhost:3081');
+    //- }
+    
+
+  

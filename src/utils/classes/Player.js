@@ -1,9 +1,9 @@
-import Person from "/Person";
-import { playerOnlineStatus } from "../enums/enums";
+const Person = require("./Person").Person;
+const playerOnlineStatus = require("../enums/enums");
 
 class Player extends Person {
   constructor(uid, nickName, isPlayerOne) {
-    this.player = new Person(uid, nickName);
+    super(uid, nickName);
     this.isPlayerOne = isPlayerOne;
     this.isOnline = true;
   }
@@ -18,3 +18,4 @@ class Player extends Person {
     return this.isOnline;
   }
 }
+module.exports.Player = Player;
